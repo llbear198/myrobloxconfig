@@ -21,7 +21,7 @@ getgenv().Config = {
     },
     ["dont Buy Seed low Price"]   = {
         ["Enabled"] = true,
-        ["Money"]   = 50000
+        ["Money"]   = 1000000
     },
     ["Auto Delete Seed Planted"]  = {
         ["Enabled"]                 = true,
