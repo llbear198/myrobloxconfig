@@ -27,6 +27,9 @@ getgenv().Config = {
         ["Cactus"] = 44,
         ["Beanstalk"] = 44,
         ["Grape"] = 44,
+        ["Lilac"] = 44,
+        ["Pink Lily"] 44,
+        [Purple Dahlia'] 44,
         ["Bamboo"] = 44
     },
     ["FPS"] = 3,
@@ -82,7 +85,7 @@ getgenv().Config = {
             ["Divine"] = false,
             ["Mythical"] = false
         },
-        ["Pet Dont Delete"] = {"Queen Bee"}
+        ["Pet Dont Delete"] = {"Queen Bee", "Dragonfly", "Disco Bee", "Butterfly", "Bear Bee"}, 
     },
     ["Webhook Mode"] = {
         ["Enable Send Pet Weight"] = false,
