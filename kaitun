@@ -11,26 +11,7 @@ getgenv().Config = {
     ["Dont Open Pack"] = false,
     ["Dont Use Flower Seed Pack"] = true, -- If u Enable Crafters Seed Pack pls enable this
     ["Seed"] = {
-        ["Strawberry"] = 44,
-        ["Corn"] = 44,
-        ["Coconut"] = 44,
-        ["Apple"] = 44,
-        ["Watermelon"] = 44,
-        ["Mushroom"] = 44,
-        ["Carrot"] = 44,
-        ["Pumpkin"] = 44,
-        ["Pepper"] = 44,
-        ["Cacao"] = 44,
-        ["Banana"] = 44,
-        ["Dragon Fruit"] = 44,
-        ["Mango"] = 44,
-        ["Cactus"] = 44,
-        ["Beanstalk"] = 44,
-        ["Grape"] = 44,
-        ["Lilac"] = 44,
-        ["Pink Lily"] 44,
-        [Purple Dahlia'] 44,
-        ["Bamboo"] = 44
+        ["Bamboo"] = 1,
     },
     ["FPS"] = 3,
     ["Buy Egg"] = true,
@@ -45,7 +26,7 @@ getgenv().Config = {
     ["Honey Item"] = {
         ["Nectarine"] = false,
         ["Flower Seed Pack"] = true,
-        ["Honey Sprinkler"] = false,
+        ["Honey Sprinkler"] = true,
         ["Bee Egg"] = true,
         ["Pollen Radar"] = false,
         ["Nectar Staff"] = false,
@@ -60,7 +41,7 @@ getgenv().Config = {
         ["Godly Sprinkler"] = true
     },
     ["Plant Candy"] = false,
-    ["PetNeedSend"] = {"Dragonfly", "Night Owl", "Raccoon"},
+    ["PetNeedSend"] = {"Dragonfly", "Disco Bee", "Butterfly", "Queen Bee"},
     ["Destroy Mode"] = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
         ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Tomato", "Orange Tulip", "Carrot"}
@@ -69,13 +50,16 @@ getgenv().Config = {
 
     ["Boost FPS"] = true,
     ["Black Screen"] = true,
-    ["Note"] = "Cyndral Hub",
+    ["Note"] = "daikk hub",
     ["Pet Mode"] = {
-        ["Sell Pet"] = true,
+        ["Sell Pet"] = false,
         ["Equip Pet"] = true,
         ["Name Pet Equip"] = {
-            ["Night Owl"] = true,
-            ["Chicken"] = true
+            ["Brown Mouse"] = true,
+            ["Tarantula Hawk"] = true,
+            ["Owl"] = true,
+            ["Blood Owl"] = true,
+            ["Cooked Owl"] true
         },
         ["Rarity"] = { -- Rarity Sell Pet
             ["Common"] = true,
@@ -85,13 +69,13 @@ getgenv().Config = {
             ["Divine"] = false,
             ["Mythical"] = false
         },
-        ["Pet Dont Delete"] = {"Queen Bee", "Dragonfly", "Disco Bee", "Butterfly", "Bear Bee"}, 
+        ["Pet Dont Delete"] = {"Queen Bee"}
     },
     ["Webhook Mode"] = {
         ["Enable Send Pet Weight"] = false,
         ["Weight"] = 10 -- if Weight >= 10 they will send wh
     },
-    ["Rejoin After X Time"] = 60, -- Minutes
+    ["Rejoin After X Time"] = 60000, -- Minutes
     ["Mutation Skips"] = { -- Skip Havest
         ["Pollinated"] = false,
         ["Disco"] = false,
