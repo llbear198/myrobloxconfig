@@ -2,80 +2,126 @@ repeat wait() until game:IsLoaded()
 wait(10)
 getgenv().Config = {
     ["Time To Sell"] = 35, -- Seconds
-    ["Craft Event"] = 
-    {
+    ["Craft Event"] = {
         ["Crafters Seed Pack"] = true,
         ["Anti Bee Egg"] = true
     },
-    ["Dont Spawn Bee Egg"] = true,
     ["Dont Open Pack"] = false,
     ["Dont Use Flower Seed Pack"] = true, -- If u Enable Crafters Seed Pack pls enable this
-    ["Seed"] = {
-        ["Bamboo"] = 1,
+    ["Mode Plant"] = "Auto", -- "Custom"
+    ["Seed"] = { -- Seed Plant Custom
+        ["Strawberry"] = 44,
+        ["Blueberry"] = 44,
+        ["Tomato"] = 44,
+        ["Loquat"] = 44,
+        ["Pineapple"] = 44,
+        ["Carrot"] = 44,
+        ["Bell Pepper"] = 44,
+        ["Green Apple"] = 44,
+        ["Feijoa"] = 44,
+        ["Avocado"] = 44,
+        ["Sugar Apple"] = 44,
+        ["Banana"] = 44,
+        ["Prickly Pear"] = 44,
+        ["Watermelon"] = 44,
+        ["Kiwi"] = 44
     },
+    ["Keep Seed"] = {"Dragon Pepper", "Elephant Ears", "Sunflower", "Candy Blossom"},
     ["FPS"] = 3,
-    ["Buy Egg"] = true,
     ["Egg"] = {
-        ["Common Egg"] = false,
-        ["Uncommon Egg"] = true,
-        ["Rare Egg"] = false,
-        ["Mythical Egg"] = false,
-        ["Legendary Egg"] = false,
-        ["Bug Egg"] = true
+        ["Mythical Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 5
+        },
+        ["Oasis Egg"] = {
+            ["Place"] = true,
+            ["Priority"] = 6
+        },
+        ["Anti Bee Egg"] = {
+            ["Place"] = true,
+            ["Priority"] = 1
+        },
+        ["Night Egg"] = {
+            ["Place"] = true,
+            ["Priority"] = 4
+        },
+        ["Bug Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 2
+        },
+        ["Paradise Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 3
+        },
+        ["Bee Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = false,
+            ["Priority"] = 3
+        }
     },
-    ["Honey Item"] = {
-        ["Nectarine"] = false,
-        ["Flower Seed Pack"] = true,
-        ["Honey Sprinkler"] = true,
-        ["Bee Egg"] = true,
-        ["Pollen Radar"] = false,
-        ["Nectar Staff"] = false,
-        ["Nectarshade"] = false,
-        ["Lavender"] = false,
-        ["Hive Fruit"] = false
+    ["SummerEvent"] = {
+        ["Traveler's Fruit"] = false,
+        ["Summer Seed Pack"] = false,
+        ["Hamster"] = true,
+        ["Oasis Egg"] = true,
+        ["Delphinium"] = false,
+        ["Lily of the Valley"] = false
     },
     ["Sprinkler"] = {
+        ["Place Sprinkler"] = true,
+        ["Buy Sprinkler"] = true,
         ["Basic Sprinkler"] = true,
         ["Advanced Sprinkler"] = true,
         ["Master Sprinkler"] = true,
-        ["Godly Sprinkler"] = true
+        ["Godly Sprinkler"] = true,
+        ["Lightning Rod"] = true,
+        ["Tanning Mirror"] = true,
+        ["Magnifying Glass"] = true
     },
     ["Plant Candy"] = false,
-    ["PetNeedSend"] = {"Dragonfly", "Disco Bee", "Butterfly", "Queen Bee"},
+    ["PetNeedSend"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus",
+                       "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw", "Hamster"},
     ["Destroy Mode"] = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
-        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Tomato", "Orange Tulip", "Carrot"}
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"}
     },
-    ["Url"] = "https://discord.com/api/webhooks/1383942008510353580/l7PgxOqQvmVdLeyB2gpbRTqdp_IRcs_vnWvu10-LFd4TvYqxT2ALyccyO-1F8p_xhY0H", -- Webhook 
+    ["Url"] = "https://discord.com/api/webhooks/1386734885867098143/g8lAjwkuqci4q_vhi4K0BAnarl-L7VmACEZKzFL0lfzaVssdMK1Hj2NESqL7W-w3f02Z", -- Webhook 
 
     ["Boost FPS"] = true,
     ["Black Screen"] = true,
-    ["Note"] = "daikk hub",
+    ["Note"] = "Cyndral Hub",
     ["Pet Mode"] = {
-        ["Sell Pet"] = false,
+        ["Sell Pet"] = true,
         ["Equip Pet"] = true,
         ["Name Pet Equip"] = {
-            ["Brown Mouse"] = true,
-            ["Tarantula Hawk"] = true,
-            ["Owl"] = true,
-            ["Blood Owl"] = true,
-            ["Cooked Owl"] true
+            ["Night Owl"] = true,
+            ["Blood Kiwi"] = true
         },
-        ["Rarity"] = { -- Rarity Sell Pet
-            ["Common"] = true,
-            ["Uncommon"] = true,
-            ["Rare"] = true,
-            ["Legendary"] = false,
-            ["Divine"] = false,
-            ["Mythical"] = false
+        ["Max Slot Pet To Sell"] = 1, -- If Total Pet In Inventory >= ["Max Slot Pet To Sell"] script will sell pet
+        ["Upgrade Slot Egg"] = {
+            ["Enable"] = true,
+            ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
+                                                    "Butterfly", "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox",
+                                                    "Axolotl", "Hyacinth Macaw", "Hamster"}
         },
-        ["Pet Dont Delete"] = {"Queen Bee"}
+        ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
+                               "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
+                               "Hamster"}
     },
     ["Webhook Mode"] = {
-        ["Enable Send Pet Weight"] = false,
+        ["Enable Send Pet Weight"] = true,
         ["Weight"] = 10 -- if Weight >= 10 they will send wh
     },
-    ["Rejoin After X Time"] = 60000, -- Minutes
+    ["Rejoin Mode"] = {
+        ["Auto Rejoin When Error Module Egg"] = true,
+        ["Auto rejoin on script update"] = true,
+        ["Enable Rejoin After X Time"] = false,
+        ["Rejoin After X Time"] = 120 -- Minutes
+    },
+    ["Limit Tree"] = 400,
     ["Mutation Skips"] = { -- Skip Havest
         ["Pollinated"] = false,
         ["Disco"] = false,
@@ -102,4 +148,4 @@ repeat
     wait()
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
     task.wait(10)
-until getgenv().Loaded
+until getgenv().Loaded 
