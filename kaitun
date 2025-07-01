@@ -87,7 +87,7 @@ getgenv().Config = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
         ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"}
     },
-    ["Url"] = "https://discord.com/api/webhooks/1386734885867098143/g8lAjwkuqci4q_vhi4K0BAnarl-L7VmACEZKzFL0lfzaVssdMK1Hj2NESqL7W-w3f02Z", -- Webhook 
+    ["Url"] = "", -- Webhook 
 
     ["Boost FPS"] = true,
     ["Black Screen"] = true,
@@ -118,7 +118,7 @@ getgenv().Config = {
         ["Auto Rejoin When Error Module Egg"] = true,
         ["Auto rejoin on script update"] = true,
         ["Enable Rejoin After X Time"] = true,
-        ["Rejoin After X Time"] = 240 -- Minutes
+        ["Rejoin After X Time"] = 360 -- Minutes
     },
     ["Limit Tree"] = 400,
     ["Mutation Skips"] = { -- Skip Havest
