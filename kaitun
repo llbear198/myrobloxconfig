@@ -108,7 +108,7 @@ getgenv().Config = {
                                                     "Axolotl", "Hyacinth Macaw", "Hamster"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
-                               "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
+                               "Mimic Octopus", "Meerkat", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
                                "Hamster"}
     },
     ["Webhook Mode"] = {
@@ -118,8 +118,8 @@ getgenv().Config = {
     ["Rejoin Mode"] = {
         ["Auto Rejoin When Error Module Egg"] = true,
         ["Auto rejoin on script update"] = true,
-        ["Enable Rejoin After X Time"] = false,
-        ["Rejoin After X Time"] = 120 -- Minutes
+        ["Enable Rejoin After X Time"] = true,
+        ["Rejoin After X Time"] = 240 -- Minutes
     },
     ["Limit Tree"] = 400,
     ["Mutation Skips"] = { -- Skip Havest
