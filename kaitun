@@ -78,8 +78,7 @@ getgenv().Config = {
         ["Master Sprinkler"] = true,
         ["Godly Sprinkler"] = true,
         ["Lightning Rod"] = true,
-        ["Tanning Mirror"] = true,
-        ["Magnifying Glass"] = true
+        ["Tanning Mirror"] = true
     },
     ["Plant Candy"] = false,
     ["PetNeedSend"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus",
