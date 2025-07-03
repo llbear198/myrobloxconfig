@@ -64,8 +64,8 @@ getgenv().Config = {
     },
     ["SummerEvent"] = {
         ["Traveler's Fruit"] = false,
-        ["Summer Seed Pack"] = true,
-        ["Hamster"] = false,
+        ["Summer Seed Pack"] = false,
+        ["Hamster"] = true,
         ["Oasis Egg"] = true,
         ["Delphinium"] = false,
         ["Lily of the Valley"] = false
@@ -76,16 +76,16 @@ getgenv().Config = {
         ["Basic Sprinkler"] = true,
         ["Advanced Sprinkler"] = true,
         ["Master Sprinkler"] = true,
-        ["Godly Sprinkler"] = true,
-        ["Lightning Rod"] = true,
-        ["Tanning Mirror"] = true
+        ["Godly Sprinkler"] = true
     },
     ["Plant Candy"] = false,
     ["PetNeedSend"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus",
                        "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw", "Hamster"},
     ["Destroy Mode"] = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
-        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"}
+        ["Mode Destroy"] = "Auto", --"Custom"
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"},
+        ["Rarity Destroy Auto"] = {"Common","Uncommon","Rare"}
     },
     ["Url"] = "", -- Webhook 
 
@@ -107,18 +107,18 @@ getgenv().Config = {
                                                     "Axolotl", "Hyacinth Macaw", "Hamster"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
-                               "Mimic Octopus", "Meerkat", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
+                               "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
                                "Hamster"}
     },
     ["Webhook Mode"] = {
-        ["Enable Send Pet Weight"] = true,
+        ["Enable Send Pet Weight"] = false,
         ["Weight"] = 10 -- if Weight >= 10 they will send wh
     },
     ["Rejoin Mode"] = {
         ["Auto Rejoin When Error Module Egg"] = true,
         ["Auto rejoin on script update"] = true,
         ["Enable Rejoin After X Time"] = false,
-        ["Rejoin After X Time"] = 360 -- Minutes
+        ["Rejoin After X Time"] = 240 -- Minutes
     },
     ["Limit Tree"] = 400,
     ["Mutation Skips"] = { -- Skip Havest
@@ -139,7 +139,7 @@ getgenv().Config = {
         ["HoneyGlazed"] = false,
         ["Shocked"] = false
     }
-}
+} 
 setfpscap(getgenv().Config["FPS"])
 script_key="PTeEFGLbXHBwdqIkhhUnGWdCwYRtXtHU";
 
@@ -147,4 +147,4 @@ repeat
     wait()
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
     task.wait(10)
-until getgenv().Loaded 
+until getgenv().Loaded
