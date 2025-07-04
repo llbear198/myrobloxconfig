@@ -105,18 +105,19 @@ getgenv().Config = {
         ["Equip Pet"] = true,
         ["Name Pet Equip"] = {
             ["Seal"] = true,
-            ["Blood Kiwi"] = true
+            ["Blood Kiwi"] = true,
+            ["Bald Eagle"] = true
         },
         ["Max Slot Pet To Sell"] = 2, -- If Total Pet In Inventory >= ["Max Slot Pet To Sell"] script will sell pet
         ["Upgrade Slot Egg"] = {
             ["Enable"] = true,
             ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
-                                                    "Butterfly", "Mimic Octopus", "Fennec Fox",
+                                                    "Butterfly", "Mimic Octopus", "Fennec Fox", "Seal",
                                                     "Hyacinth Macaw", "Hamster"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
-                               "Mimic Octopus", "Fennec Fox", "Hyacinth Macaw",
-                               "Hamster", "Golden Lab"},
+                               "Mimic Octopus", "Fennec Fox", "Hyacinth Macaw", "Blood Kiwi", "Bald Eagle",
+                               "Hamster", "Seal"},
         ["Dont Sell Pet If Weight > x"] = 10 -- Script dont sell pet if this weight >= 10
     },
     ["Webhook Mode"] = {
