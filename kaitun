@@ -9,6 +9,7 @@ getgenv().Config = {
     ["Dont Open Pack"] = false,
     ["Dont Use Flower Seed Pack"] = true, -- If u Enable Crafters Seed Pack pls enable this
     ["Mode Plant"] = "Auto", -- "Custom"
+
     ["Seed"] = { -- Seed Plant Custom
         ["Strawberry"] = 44,
         ["Blueberry"] = 44,
@@ -29,7 +30,7 @@ getgenv().Config = {
     ["Keep Seed"] = {"Dragon Pepper", "Elephant Ears", "Sunflower", "Candy Blossom"},
     ["FPS"] = 3,
     ["Egg"] = {
-        ["Mythical Egg"] = {
+        ["Rare Summer Egg"] = {
             ["Buy"] = true,
             ["Place"] = true,
             ["Priority"] = 5
@@ -64,8 +65,8 @@ getgenv().Config = {
     },
     ["SummerEvent"] = {
         ["Traveler's Fruit"] = false,
-        ["Summer Seed Pack"] = false,
-        ["Hamster"] = true,
+        ["Summer Seed Pack"] = true,
+        ["Hamster"] = false,
         ["Oasis Egg"] = true,
         ["Delphinium"] = false,
         ["Lily of the Valley"] = false
@@ -83,12 +84,19 @@ getgenv().Config = {
                        "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw", "Hamster"},
     ["Destroy Mode"] = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
-        ["Mode Destroy"] = "Auto", --"Custom"
+        ["Mode Destroy"] = "Auto", -- "Custom"
         ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"},
-        ["Rarity Destroy Auto"] = {"Common","Uncommon","Rare"}
+        ["Rarity Destroy Auto"] = {"Common", "Uncommon", "Rare", "Legendary"},
+        ["Destroy Untill"] = 450
     },
     ["Url"] = "", -- Webhook 
+    ["4th July Event"] = {
+        ["Firework Flower"] = false,
+        ["Firework"] = false,
+        ["Bald Eagle"] = true,
+        ["Liberty Lily"] = false
 
+    },
     ["Boost FPS"] = true,
     ["Black Screen"] = true,
     ["Note"] = "Cyndral Hub",
@@ -96,19 +104,20 @@ getgenv().Config = {
         ["Sell Pet"] = true,
         ["Equip Pet"] = true,
         ["Name Pet Equip"] = {
-            ["Night Owl"] = true,
+            ["Seal"] = true,
             ["Blood Kiwi"] = true
         },
-        ["Max Slot Pet To Sell"] = 1, -- If Total Pet In Inventory >= ["Max Slot Pet To Sell"] script will sell pet
+        ["Max Slot Pet To Sell"] = 2, -- If Total Pet In Inventory >= ["Max Slot Pet To Sell"] script will sell pet
         ["Upgrade Slot Egg"] = {
             ["Enable"] = true,
             ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
-                                                    "Butterfly", "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox",
-                                                    "Axolotl", "Hyacinth Macaw", "Hamster"}
+                                                    "Butterfly", "Mimic Octopus", "Fennec Fox",
+                                                    "Hyacinth Macaw", "Hamster"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
-                               "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
-                               "Hamster"}
+                               "Mimic Octopus", "Fennec Fox", "Hyacinth Macaw",
+                               "Hamster", "Golden Lab"},
+        ["Dont Sell Pet If Weight > x"] = 10 -- Script dont sell pet if this weight >= 10
     },
     ["Webhook Mode"] = {
         ["Enable Send Pet Weight"] = false,
@@ -117,7 +126,7 @@ getgenv().Config = {
     ["Rejoin Mode"] = {
         ["Auto Rejoin When Error Module Egg"] = true,
         ["Auto rejoin on script update"] = true,
-        ["Enable Rejoin After X Time"] = false,
+        ["Enable Rejoin After X Time"] = true,
         ["Rejoin After X Time"] = 240 -- Minutes
     },
     ["Limit Tree"] = 400,
@@ -139,7 +148,7 @@ getgenv().Config = {
         ["HoneyGlazed"] = false,
         ["Shocked"] = false
     }
-} 
+}
 setfpscap(getgenv().Config["FPS"])
 script_key="PTeEFGLbXHBwdqIkhhUnGWdCwYRtXtHU";
 
@@ -147,4 +156,4 @@ repeat
     wait()
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
     task.wait(10)
-until getgenv().Loaded
+until getgenv().Loaded 
