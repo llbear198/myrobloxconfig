@@ -63,14 +63,7 @@ getgenv().Config = {
             ["Priority"] = 3
         }
     },
-    ["SummerEvent"] = {
-        ["Traveler's Fruit"] = false,
-        ["Summer Seed Pack"] = true,
-        ["Hamster"] = false,
-        ["Oasis Egg"] = true,
-        ["Delphinium"] = false,
-        ["Lily of the Valley"] = false
-    },
+
     ["Sprinkler"] = {
         ["Place Sprinkler"] = true,
         ["Buy Sprinkler"] = true,
@@ -85,39 +78,40 @@ getgenv().Config = {
     ["Destroy Mode"] = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
         ["Mode Destroy"] = "Auto", -- "Custom"
-        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"},
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot", "Tomato"},
         ["Rarity Destroy Auto"] = {"Common", "Uncommon", "Rare", "Legendary"},
         ["Destroy Untill"] = 450
     },
     ["Url"] = "", -- Webhook 
-    ["4th July Event"] = {
-        ["Firework Flower"] = false,
-        ["Firework"] = false,
-        ["Bald Eagle"] = true,
-        ["Liberty Lily"] = false
 
-    },
     ["Boost FPS"] = true,
     ["Black Screen"] = true,
+    ["Dino Event"] = {
+        ["Auto Claim Quest"] = true,
+        ["Auto Restart Quest"] = true,
+        ["Auto Trade Eggs"] = true,
+        ["Pet Dont Trade"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
+                               "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
+                               "Hamster", "Golden Lab"}
+    },
     ["Note"] = "Cyndral Hub",
     ["Pet Mode"] = {
         ["Sell Pet"] = true,
-        ["Equip Pet"] = true,
         ["Name Pet Equip"] = {
             ["Starfish"] = true,
             ["Blood Kiwi"] = true,
             ["Bald Eagle"] = true
         },
-        ["Max Slot Pet To Sell"] = 2, -- If Total Pet In Inventory >= ["Max Slot Pet To Sell"] script will sell pet
+        ["Max Slot Pet To Sell"] = 1, -- If Total Pet In Inventory >= ["Max Slot Pet To Sell"] script will sell pet
         ["Upgrade Slot Egg"] = {
             ["Enable"] = true,
             ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
-                                                    "Butterfly", "Mimic Octopus", "Praying Mantis", "Fennec Fox", "Seal",
-                                                    "Hyacinth Macaw", "Hamster"}
+                                                    "Butterfly", "Mimic Octopus", "Praying Mantis", "Seal", "Fennec Fox",
+                                                    "Axolotl", "Hyacinth Macaw", "Hamster"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
-                               "Mimic Octopus", "Fennec Fox", "Hyacinth Macaw", "Blood Kiwi", "Bald Eagle",
-                               "Hamster", "Seal", "Starfish", "Praying Mantis"},
+                               "Mimic Octopus", "Praying Mantis", "Starfish", "Fennec Fox", "Seal", "Hyacinth Macaw",
+                               "Hamster"},
         ["Dont Sell Pet If Weight > x"] = 10 -- Script dont sell pet if this weight >= 10
     },
     ["Webhook Mode"] = {
@@ -127,7 +121,7 @@ getgenv().Config = {
     ["Rejoin Mode"] = {
         ["Auto Rejoin When Error Module Egg"] = true,
         ["Auto rejoin on script update"] = true,
-        ["Enable Rejoin After X Time"] = true,
+        ["Enable Rejoin After X Time"] = false,
         ["Rejoin After X Time"] = 240 -- Minutes
     },
     ["Limit Tree"] = 400,
