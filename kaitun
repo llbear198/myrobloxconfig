@@ -30,7 +30,7 @@ getgenv().Config = {
     ["Keep Seed"] = {"Dragon Pepper", "Elephant Ears", "Sunflower", "Candy Blossom"},
     ["FPS"] = 3,
     ["Egg"] = {
-        ["Rare Summer Egg"] = {
+        ["Common Summer Egg"] = {
             ["Buy"] = true,
             ["Place"] = true,
             ["Priority"] = 5
@@ -112,12 +112,12 @@ getgenv().Config = {
         ["Upgrade Slot Egg"] = {
             ["Enable"] = true,
             ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
-                                                    "Butterfly", "Mimic Octopus", "Fennec Fox", "Seal",
+                                                    "Butterfly", "Mimic Octopus", "Praying Mantis", "Fennec Fox", "Seal",
                                                     "Hyacinth Macaw", "Hamster"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
                                "Mimic Octopus", "Fennec Fox", "Hyacinth Macaw", "Blood Kiwi", "Bald Eagle",
-                               "Hamster", "Seal"},
+                               "Hamster", "Seal", "Starfish", "Praying Mantis"},
         ["Dont Sell Pet If Weight > x"] = 10 -- Script dont sell pet if this weight >= 10
     },
     ["Webhook Mode"] = {
