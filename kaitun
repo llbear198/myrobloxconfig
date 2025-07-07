@@ -80,7 +80,7 @@ getgenv().Config = {
         ["Mode Destroy"] = "Auto", -- "Custom"
         ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot", "Tomato"},
         ["Rarity Destroy Auto"] = {"Common", "Uncommon", "Rare", "Legendary"},
-        ["Destroy Untill"] = 450
+        ["Destroy Untill"] = 150
     },
     ["Url"] = "", -- Webhook 
 
