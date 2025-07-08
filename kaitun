@@ -30,6 +30,11 @@ getgenv().Config = {
     ["Keep Seed"] = {"Dragon Pepper", "Elephant Ears", "Sunflower", "Candy Blossom"},
     ["FPS"] = 3,
     ["Egg"] = {
+        ["Common Summer Egg"] = {
+            ["Buy"] = true,
+            ["Place"] = true,
+            ["Priority"] = 5
+        },
         ["Mythical Egg"] = {
             ["Buy"] = true,
             ["Place"] = true,
@@ -96,9 +101,9 @@ getgenv().Config = {
         ["Auto Claim Quest"] = true,
         ["Auto Restart Quest"] = true,
         ["Auto Trade Eggs"] = true,
-        ["Pet Dont Trade"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
+        ["Pet Dont Trade"] = {"Queen Bee", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
                                "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
-                               "Hamster", "Golden Lab","T-Rex"}
+                               "Hamster", "Golden Lab","T-Rex", "Starfish"}
     },
     ["Note"] = "Cyndral Hub",
     ["Pet Mode"] = {
