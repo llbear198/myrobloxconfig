@@ -61,7 +61,11 @@ getgenv().Config = {
             ["Buy"] = true,
             ["Place"] = false,
             ["Priority"] = 3
-        }
+        },
+        ["Dinosaur Egg"] = {
+            ["Place"] = true,
+            ["Priority"] = 1
+        },
     },
 
     ["Sprinkler"] = {
@@ -70,15 +74,17 @@ getgenv().Config = {
         ["Basic Sprinkler"] = true,
         ["Advanced Sprinkler"] = true,
         ["Master Sprinkler"] = true,
-        ["Godly Sprinkler"] = true
+        ["Godly Sprinkler"] = true,
+        ["Lightning Rod"] = true,
+        ["Tanning Mirror"] = true
     },
     ["Plant Candy"] = false,
     ["PetNeedSend"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly", "Mimic Octopus",
-                       "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw", "Hamster"},
+                       "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw", "Hamster","T-Rex"},
     ["Destroy Mode"] = {
         ["Auto Destroy when have money"] = 1000000, -- its will destroy all trees select when money >= select
         ["Mode Destroy"] = "Auto", -- "Custom"
-        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot", "Tomato"},
+        ["Trees"] = {"Strawberry", "Blueberry", "Corn", "Orange Tulip", "Carrot"},
         ["Rarity Destroy Auto"] = {"Common", "Uncommon", "Rare", "Legendary"},
         ["Destroy Untill"] = 150
     },
@@ -92,11 +98,12 @@ getgenv().Config = {
         ["Auto Trade Eggs"] = true,
         ["Pet Dont Trade"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
                                "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
-                               "Hamster", "Golden Lab"}
+                               "Hamster", "Golden Lab","T-Rex"}
     },
     ["Note"] = "Cyndral Hub",
     ["Pet Mode"] = {
         ["Sell Pet"] = true,
+        ["Equip Pet"] = true,
         ["Name Pet Equip"] = {
             ["Starfish"] = true,
             ["Blood Kiwi"] = true,
@@ -106,12 +113,12 @@ getgenv().Config = {
         ["Upgrade Slot Egg"] = {
             ["Enable"] = true,
             ["Black List Pet For Upgrade Slots"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee",
-                                                    "Butterfly", "Mimic Octopus", "Praying Mantis", "Seal", "Fennec Fox",
-                                                    "Axolotl", "Hyacinth Macaw", "Hamster"}
+                                                    "Butterfly", "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox",
+                                                    "Axolotl", "Hyacinth Macaw", "Hamster","T-Rex"}
         },
         ["Pet Dont Delete"] = {"Queen Bee", "Red Fox", "Dragonfly", "Raccoon", "Disco Bee", "Butterfly",
-                               "Mimic Octopus", "Praying Mantis", "Starfish", "Fennec Fox", "Seal", "Hyacinth Macaw",
-                               "Hamster", "Golden Lab"},
+                               "Mimic Octopus", "Meerkat", "Sand Snake", "Fennec Fox", "Axolotl", "Hyacinth Macaw",
+                               "Hamster", "Golden Lab","T-Rex", "Starfish"},
         ["Dont Sell Pet If Weight > x"] = 10 -- Script dont sell pet if this weight >= 10
     },
     ["Webhook Mode"] = {
@@ -122,7 +129,7 @@ getgenv().Config = {
         ["Auto Rejoin When Error Module Egg"] = true,
         ["Auto rejoin on script update"] = true,
         ["Enable Rejoin After X Time"] = false,
-        ["Rejoin After X Time"] = 240 -- Minutes
+        ["Rejoin After X Time"] = 60 -- Minutes
     },
     ["Limit Tree"] = 400,
     ["Mutation Skips"] = { -- Skip Havest
@@ -151,4 +158,4 @@ repeat
     wait()
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
     task.wait(10)
-until getgenv().Loaded 
+until getgenv().Loaded
